@@ -1,0 +1,8 @@
+POST http://localhost:5000/send
+content-type: application/json
+
+{
+  "name": "Biki",
+  "time": "2:00PM",
+  "message": "This is a test!"
+}

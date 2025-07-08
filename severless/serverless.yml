@@ -1,0 +1,17 @@
+
+service: rabbit-lambda
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  processMessage:
+    handler: handler.processMessage
+    events:
+      - http:
+          path: trigger
+          method: post
+
+plugins:
+  - serverless-offline

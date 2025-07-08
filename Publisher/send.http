@@ -1,8 +1,14 @@
 POST http://localhost:5000/send
-content-type: application/json
+Content-Type: application/json
 
 {
-  "name": "Biki",
-  "time": "2:00PM",
-  "message": "This is a test!"
+  "userid": "user456",
+  "time": "2025-07-01T11:00:00Z",
+  "event": {
+    "type": "document",
+    "data": {
+      "title": "Monthly Report",
+      "content": "Summary of user activity for June 2025"
+    }
+  }
 }
